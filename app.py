@@ -89,4 +89,13 @@ if st.button("🔍 Mérkőzés elemzése", type="primary"):
             f"{p_btts:.1%}"
         )
         c5.metric(
-            "Több mint 
+            "Több mint 2,5 gól",
+            f"{p_over25:.1%}"
+        )
+
+        st.info(
+            "Ez egy egyszerű Poisson-modell. "
+            "A becslés a megadott várható gólszámoktól függ, "
+            "és nem használ automatikusan friss csapatstatisztikákat."
+        )
+```

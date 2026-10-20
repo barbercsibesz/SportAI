@@ -1,4 +1,4 @@
-```python
+
 import streamlit as st
 import math
 
@@ -98,4 +98,4 @@ if st.button("🔍 Mérkőzés elemzése", type="primary"):
             "A becslés a megadott várható gólszámoktól függ, "
             "és nem használ automatikusan friss csapatstatisztikákat."
         )
-```
+

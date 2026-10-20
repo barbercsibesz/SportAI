@@ -20,20 +20,20 @@ st.header("📊 Mérkőzés elemzése")
 col1, col2 = st.columns(2)
 
 with col1:
-home = st.text_input("Hazai csapat", "Liverpool")
-home_goals = st.number_input(
-"Hazai csapat várható góljai",
-min_value=0.0, max_value=6.0,
-value=1.8, step=0.1
-)
+    home = st.text_input("Hazai csapat", "Liverpool")
+    home_goals = st.number_input(
+        "Hazai csapat várható góljai",
+        min_value=0.0, max_value=6.0,
+        value=1.8, step=0.1
+    )
 
 with col2:
-away = st.text_input("Vendégcsapat", "Chelsea")
-away_goals = st.number_input(
-"Vendégcsapat várható góljai",
-min_value=0.0, max_value=6.0,
-value=1.1, step=0.1
-)
+    away = st.text_input("Vendégcsapat", "Chelsea")
+    away_goals = st.number_input(
+        "Vendégcsapat várható góljai",
+        min_value=0.0, max_value=6.0,
+        value=1.1, step=0.1
+    )
 
 def poisson(k, lam):
 return (math.exp(-lam) * lam**k / math.factorial(k))
